@@ -13,3 +13,19 @@ type([4, 5, 6])
 # isinstanece関数
 # 指定したオブジェクトが指定したクラスのインスタンスであればTrueを返す
 isinstance(123, int)
+isinstance("python", str)
+isinstance([4, 5, 6], list)
+
+# issubclass関数
+# 指定したクラスAがクラスBと同一である場合にTrueを返す
+class A:
+    pass
+
+class B(A):
+    pass
+
+class C(A):
+    pass
+
+print(issubclass(C, A))
+print(issubclass(C, B))
